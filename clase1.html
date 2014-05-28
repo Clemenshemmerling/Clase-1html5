@@ -6,17 +6,55 @@
 </head>
 <body>
 	<header>
+		<figure id="logo">
+		    <img src="logo.jpg" />
+	    </figure>
+	    <h1>Clase 1 HTML5</h1>
+	    <figure id="avatar">
+		    <img src="avatar.jpeg" />
+	    </figure>
 	</header>
 	<nav>
+		<ul>
+			<li><a href="#">Python</a></li>
+			<li><a href="#">HTML5</a></li>
+			<li><a href="#">Javascript</a></li>
+			<li><a href="#">CSS3</a></li>
+			<li><a href="#">Django</a></li>
+			<li id="Publicar_nav">
+				<a href="#">Publicar</a>
+			</li>
+		</ul>
 	</nav>
-	<section>
-		<article></article>
+	<section id="contenido">
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpeg">
+			</figure>
+			<h2><a href="#">Titulo del articulo</a></h2>
+			<p class="autor_item">
+				Por <a href="#">Clemens Hemmerling</a>
+			</p>
+			<p class="datos_item">
+				<a href="#" class="tag_item">Python</a>
+				<span class="fecha_item"> 
+					Hace <strong>5</strong> min
+				</span>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item"></a>
+			</p>	
+			<p class="votacion_item">
+				<a href="#" class="up"></a>
+				696
+				<a href="#" class="down"></a>
+			</p>
+		</article>
 	</section>
 	<footer>
 		<p> 
 			<strong>Power by weed</strong>
 		</p>
-		<p> Clemens Hemmerling </p>
+		<p> Clemens Hemmerling 2014</p>
 	</footer>
 
 </body>
