@@ -35,8 +35,8 @@
 }
 .icon-estrella:before {
 	content: "\f005";
-	position: absolute;
-    right: 2.3em;
+	position: relative;
+    float: right;
 }
 a
 {
