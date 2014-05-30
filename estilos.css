@@ -114,11 +114,11 @@ header #logo
 }
 header #logo img
 {
-	transition:2s;
+	-webkit-transition:2s;
 	width: 52px;
 }
 header #logo img:hover{
-	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
 	border:2px;
 }
 nav
