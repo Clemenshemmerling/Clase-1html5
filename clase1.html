@@ -28,10 +28,15 @@
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#" class="icon-lapiz">Publicar</a>
+				<a href="#" class="icon-lapiz" id="mostrar-form">Publicar</a>
 			</li>
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario">
+		<input type="text" id="titulo" required placeholder="Titulo"/>
+        <input type="url" id="url" required placeholder="Link"/>
+         <input type="submit" value="Agregar"/>
+	</form>
 	<aside>
 		<video width="320" height="240" controls>
                <source src="movie.mp4" type="video/mp4">
@@ -200,6 +205,7 @@
 		</p>
 		<p> Clemens Hemmerling 2014</p>
 	</footer>
-
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="formulario.js"></script>
 </body>
 </html>
