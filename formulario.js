@@ -4,10 +4,14 @@ var $form = $('#formulario'),
     $button = $('#mostrar-form'),
     $list = $('#contenido'),
     $post = $('.item').first();
-
+if(localStorage.getItem('autosave')){
+	$titulo.val(sessionStorage.getItem('titulo'));
+	$url.val(sessionStorage.getItem('url'));
+}
 
 function mostrarformulario(){
 	$form.slideToggle();
+	$list.slideToggle();
 	return false;
 }
 
@@ -23,9 +27,10 @@ function agregarpost(){
      $clone.hide();
 
      $list.prepend($clone);
-
+      mostrarformulario();
+      $titulo.val('');
+      $url.val('');
      $clone.fadeIn();  
-           
 	return false;
 }
     //eventos
