@@ -6,7 +6,7 @@ var $form = $('#formulario'),
     $post = $('.item').first();
 if(localStorage.getItem('autosave')){
 	$titulo.val(sessionStorage.getItem('titulo'));
-	$url.val(sessionStorage.getItem('url'));
+	$url.val(sessionStorage.gtem('url'));
 }
 
 function mostrarformulario(){
